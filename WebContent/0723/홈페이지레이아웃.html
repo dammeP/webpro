@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+
+
+	a:link{
+		color : white;
+		text-decoration:none;
+	}
+	a:visited {
+		color : white;
+		text-decoration:line-through;
+	}
+	a:hover{
+		color : black;
+		background: #f7f1ce;
+		font-size : 1.2em;
+		text-decoration:overLine;
+	}
+	a:active {
+		color:#f7f1ce;
+		text-decoration:underLine;
+	}
+
+	div{
+		box-sizing: border-box;
+		margin : 2px;
+		padding : 5px;
+	}
+	#header {
+		float : top;
+		background: #fcc0b0;
+		width: 100%;
+		height: 100px;
+		border-radius: 70px 70px 70px 70px;
+		text-align: center;
+		font-size: 1.5em;
+		color:#7b3b0d;
+	
+	}
+	#nav {
+		float : top;
+		background: #f99e84;
+		width: 100%;
+		height: 70px;
+		border-radius: 70px 70px 70px 70px;
+	}
+	
+	
+	ul#u2 {
+
+	
+		border-left: none;
+		border-right: none;
+		
+	}
+	#u2 li {
+/*   		border : 1px solid orange;   */
+		display : inline;
+		margin: 40px;
+ 		padding : 50px;  
+ 		letter-spacing: 10px;
+ 		text-align: center;
+ 		font-weight: bold;
+ 		color :white;
+	}
+	
+/* 	aside{ */
+/* 		width : calc(20% - 1%); */
+/* 		height: 400px; */
+	
+	
+/* 	} */
+	#left{
+		width : calc(20% - 1%);
+		height: 600px;
+		float : left;
+		background: #bfdff7;
+		border-radius: 70px 70px 10px 10px;
+		padding : 20px;
+	
+	}
+	#section{
+
+		width : calc(65% - 4%);
+		height: 600px;
+		float : left;
+		background: #f3f4f6;
+		border-radius: 70px 70px 70px 70px;
+	
+	}
+	#right {
+		width : calc(20% - 1%);
+		height: 600px;
+		float : right;
+		background: #bfdff7;
+		border-radius: 70px 70px 10px 10px;
+		padding : 30px;
+		
+	
+	}
+	#footer{
+	clear : both;
+		background: #c5f1c5;
+		width: 100%;
+		height: 80px;
+		border-radius: 70px 70px 70px 70px;
+		text-align: center;
+		font-weight: bold;
+	}
+	img{
+		width : 150px;
+		height : 100px;
+	}
+	table{
+		width : calc(100% - 1%);
+		height: 400px;
+		background: #81b9e3;
+		font-weight: bold;
+		color : white;
+		
+	}
+	.in{
+	word-wrap : break-word;
+	border :1px solid #e4e5e6;
+	margin-left:30px;
+	width : 300px;
+	height:580px;
+	padding : 18px;
+	float : left;
+	}
+
+	
+	#im1{
+		width : 300px;
+		height: 300px;
+	}
+</style>
+
+</head>
+<body>
+	<div></div>
+	<div id="header" >
+		<h1>담켓컬리</h1>
+	</div>
+	<div id="nav">
+	<ul id="u2">
+		<li>HOME</li>
+		<li>SHOPPING ABOUT</li>
+		<li>NEWS</li>
+		<li>MY ACCOUNT</li>
+		<li>CONTACTS</li>
+	</ul>
+	</div>
+	
+	<div id="left">
+	<h2>카테고리</h2>
+	<table id="tab1" >
+	<tr>
+	<td><a href="홈페이지레이아웃.html">&nbsp;&nbsp;&nbsp;채소<hr></td>
+
+	</tr>
+	<tr>
+	<td><a href="../카테고리/정육.html" target="ifr">&nbsp;&nbsp;&nbsp;정육</a><hr></td>
+	</tr>
+	<tr>
+	<td><a href="../카테고리/해산물.html" target="ifr">&nbsp;&nbsp;&nbsp;해산물</a><hr></td>
+	</tr>
+	<tr>
+	<td><a href="../카테고리/면양념.html" target="ifr">&nbsp;&nbsp;&nbsp;면/양념</a><hr></td>
+	</tr>
+	<tr>
+	<td><a href="../카테고리/베이커리.html" target="ifr">&nbsp;&nbsp;&nbsp;베이커리</a><hr></td>
+	</tr>
+	<tr>
+	<td><a href="../카테고리/과일.html" target="ifr">&nbsp;&nbsp;&nbsp;과일</a><hr></td>
+	</tr>
+	<tr>
+	<td><a href="../카테고리/씨리얼.html" target="ifr">&nbsp;&nbsp;&nbsp;씨리얼</a></td>
+	</tr>
+	
+	</table>
+	
+	</div>
+	<div id="right">
+	<h2>Shopping Cart</h2>
+	현재 쇼핑카트에 물품이 없습니다.<br>
+	<a href="../카테고리/쇼핑카테고리담기.html">쇼핑카트 보기</a><bf>
+	<h2>Log In</h2><br>
+	<form action="../카테고리/login.jsp" method="get">
+	아이디<br>
+	<input type="text" name="id"><br>
+	패스워드<br>
+	<input type="text" name="passwd"><br><br>
+	<button type="submit" onclike="alert('환영합니다.')">로그인</button>
+	<input type="reset" value="초기화"><br>
+	</form>
+	<a href="../카테고리/회원가입.html">회원가입</a><bf>
+	<a href="">비밀번호 분실</a><bf>
+		
+	</div>
+	
+	<iframe src="../카테고리/채소.html" name="ifr" id="section">
+	</iframe>
+	
+
+
+	
+	<div id="footer"><br>2020.07.24&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09-18사이에만 연락 042-5455-5545</div>
+
+</body>
+</html>

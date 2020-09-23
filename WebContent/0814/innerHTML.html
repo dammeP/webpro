@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<script>
+window.onload = function(){
+	   form = document.sel;
+	   
+	 
+	}
+
+	function gob(){
+		
+		selvalue = check.sel.value;
+		res = "";
+		
+		for(i=1; i<10; i++){
+			res+= selvalue +" * " + i + " = " + (selvalue*i) +"<br>";
+		}
+		document.querySelector('#result1').innerHTML = res;
+	}
+
+</script>
+</head>
+<body>
+
+		
+<div class="box">
+	<form name="check">
+	<table>
+	
+	<select name="sel">
+		<option value="1" name="dan">1단</option>
+		<option value="2" name="dan">2단</option>
+		<option value="3" name="dan">3단</option>
+		<option value="4" name="dan">4단</option>
+		<option value="5" name="dan">5단</option>
+		<option value="6" name="dan">6단</option>
+		<option value="7" name="dan">7단</option>
+		<option value="8" name="dan">8단</option>
+		<option value="9" name="dan">9단</option>
+	</select>
+		<input type="button" value="출력" onclick="gob()""><br><br>
+		<h2>&nbsp;&nbsp;결과출력</h2>
+		<div id="result1"></div>
+	</table>
+	</form>
+	
+</div>
+
+</body>
+</html>

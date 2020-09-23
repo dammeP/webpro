@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<style>
+	#t1{
+		width : 500px;
+		height : 300px;
+	
+	
+	}
+
+</style>
+<script>
+	function proc1(){
+		
+		// name을 이용해서 접근
+		vname = document.ff.name.value;
+		vgender = document.ff.gender.value;
+		vhobby = document.ff.hobby;
+		
+		res ="이름 : " + vname + "\n";
+		res += "성별 : " + vgender + "\n";
+		res += "취미 : ";
+		
+		for(i=0; i<vhobby.length; i++){
+			//console.log(vhobby[i].checked);
+			if(vhobby[i].checked){
+				res += vhobby[i].value + " ";
+			}
+		}
+		
+		document.ff.area.value = res;
+	
+	}
+	
+	
+	
+
+</script>
+</head>
+<body>
+
+<div class="box">
+		<h2>Form2 연습</h2><br>
+		<form name="ff">
+		이 름 : <input type="text" name="name"><br><br>
+		성 별 : <input type="radio" value="남자" name="gender">남자
+			  <input type="radio" value="여자" name="gender">여자<br><br>
+		취 미 : <input type="checkbox" value="여행" name="hobby">여행	  
+			  <input type="checkbox" value="독서" name="hobby">독서
+			  <input type="checkbox" value="영화감상" name="hobby">영화감상
+			  <input type="checkbox" value="바둑" name="hobby">바둑
+			  <input type="checkbox" value="장기" name="hobby">장기
+			  <input type="checkbox" value="등산" name="hobby">등산
+			  <input type="checkbox" value="여행" name="hobby">여행<br><br>
+			  
+		<input type="button" value="결과출력" onclick="proc1()"><br><br>
+		<textarea name="area" rows="10" cols="60" name="area">
+		</textarea> 
+		
+		</form>
+		
+		
+		
+		
+	
+	</div>
+
+</body>
+</html>
